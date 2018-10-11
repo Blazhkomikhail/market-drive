@@ -191,7 +191,7 @@ let repeatOrder = document.querySelector('.history-linkContain>.history-navItem'
 			dateCont.removeEventListener('click', startCreateTable);
 		document.addEventListener('click', eventRemoveInputs);
 	}
-// fix the bag on reconversion (when user ins 0 or nothing)
+
 	function eventRemoveInputs(e) {
 		let quantity = document.querySelectorAll('.td-quantity');
 	    if (e.target.tagName !== 'INPUT' && 
