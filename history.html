@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/navStyle.css">
+    <link rel="stylesheet" type="text/css" href="./styles/historyStyle.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Market Drive</title>
+</head>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-xl-4 col-lg-4 logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <form class="col-md-4 col-lg-3">
+                <a href="#" alt=""><i class="fas fa-search"></i></a><input type="search" class="input-search" placeholder="найти товар..." aria-label="Search">
+                <button class="button-search" type="submit">найти</button>
+            </form>
+            <div class="exit col-lg-2 col-md-3">
+                <button class="exit-link" type="submit"><a href="index.html" alt="">Выход</a></button>
+            </div>
+            <div class="col-lg-1 col-xs-1 offset-md-9 offset-lg-0 user-name exit-block"></div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="background-image"></div>
+            </div>
+        </div>
+        <div class="container padding-reset">
+            <div class="content">
+                    <div class="row">
+                            <div class="pos-f-t">
+                                <nav class="navbar">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <div class="hamburger hamburger-image">
+                                        </div>
+                                    </button>
+                                </nav>
+                                <div class="collapse" id="navbarToggleExternalContent">
+                                    <div class="p-4">
+                                        <ul class="hamburger-menu">
+                                            <li class="hamburger-item"><a href="content.html" class="hamburger-link" alt="">Каталоги</a></li>
+                                            <li class="hamburger-item"><a href="history.html" class="hamburger-link" alt="">История</a></li>
+                                            <li class="hamburger-item"><a href="./templates/templates.html" class="hamburger-link" alt="">Шаблоны</a></li>
+                                            <li class="hamburger-item"><a href="./expenses/expenses.html" class="hamburger-link" alt="">Затраты</a></li>
+                                            <li class="hamburger-item"><a href="./basket/basket.html" class="hamburger-link" alt="">Корзина</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            <nav class="row">
+                <ul class="main-nav col-lg-12 col-xl-10 offset-xl-2">
+                        <li>
+                            <a href="content.html" class="catalog">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="history.html" class="history">История</a>
+                        </li>
+                        <li>
+                            <a href="./templates/templates.html" class="template">Шаблоны</a>
+                        </li>
+                        <li>
+                            <a href="./expenses/expenses.html" class="cost">Затраты</a>
+                        </li>
+                        <li>
+                            <a href="./basket/basket.html" class="buy">Корзина</a>
+                        </li>
+                    </ul>
+            </nav>
+        <div class="container">
+            <div class="content-container">  
+                <div class="content-title">
+                    <div class="title-date-wrap">    
+                        <div class="history-title-wrap"> <h2 class="history-title">История покупок</h2></div>
+                        <!-- <span style="margin-left: 15px; font-size: 16px; Color: #666666">Покупки за период</span>
+                        <input type="date" style="margin-left: 15px; max-width: 200px;" name="date" class="input-date"> -->
+                        
+                    </div>
+                    <div class="history-sumRepeatWrap">
+                        <div class="history-sumWrap">Покупка:<span class= "date"></span> Сумма: <span class= "sum"></span> </div>  
+                        <ul class="history-linkContain">
+                            <li class="history-navItem">
+                                <span class="history-navSpan" href="#">Повторить</span>
+                            </li>
+                        </ul>
+
+                    </div>    
+                    
+                </div>
+                    <div class="row">
+                        <div class="col-md-12 col-xl-12 col-lg-12 more-info">
+                                <div class="offset-xl-1 purch-item"></div>
+                                <div class="purch-list"></div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+            <div class="footer-contact">
+                    <div class="container">
+                            <div class="row">
+                                <div class="mail col-lg-4 offset-lg-1 col-md-5 offset-md-1"><p>Будьте в курсе последних новостей проекта!</p></div>
+                                <input type="email" class="input-email col-lg-3 col-md-2" placeholder="Ваш email..." aria-label="Email">
+                                <button class="button-email col-lg-2 col-md-2" type="submit">отправить</button>
+                            </div>
+                        </div>
+            </div>
+            <div class="footer-content">
+                <div class="aside"></div>
+                <div class="footer-image">
+                        <div class="container">
+                                <div class="row">
+                                    <ul class="social-menu col-xl-2 offset-xl-10 col-lg-3 offset-lg-9 col-md-3 offset-md-9">
+                                        <li class="item"><a href="#" class="fasebook"></a></li>
+                                        <li class="item"><a href="#" class="google"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </div>
+                <div class="aside"></div>
+            </div>
+        </footer>
+    <script type="text/javascript" src="./js/historyJs.js"></script>
+      <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="history-js.js"></script>
+</body>
+</html>
